@@ -1,0 +1,223 @@
+
+/* Estilo básico do menu */
+.menu {
+    position: relative;
+    display: inline-flexbox;
+}
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    align-items: end;
+    padding: 10px;
+    background-color: #F0524D;
+    color: white;
+    border-radius: 20px;
+}
+/* Oculta as opções do menu inicialmente */
+.menu-options {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    list-style-type: none;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+/* Exibe as opções do menu quando o mouse passa por cima do ícone */
+.menu:hover .menu-options {
+    display: block;
+}
+/* Estilo dos itens do menu */
+.menu-options li {
+    padding: 5px 50px;
+    text-align: left;
+}
+.menu-options li a {
+    text-decoration: none;
+    color: #333;
+}
+.menu-options li a:hover {
+    background-color: #f1f1f1;
+    color: #F0524D;
+}
+
+
+/* Fonte elegante */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap');
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Cor de fundo do header */
+    z-index: 999; /* Garante que o header fique acima de outros elementos */
+    transition: all 0.3s ease-in-out;
+    display: inline-block; /* Torna o header um container flex */
+    justify-content: space-between; /* Alinha os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+  }
+  
+  .menu-icon {
+    width: 30px; /* Define a largura do botão */
+    height: 30px; /* Define a altura do botão */
+    padding: 5px; /* Espaçamento interno do botão */
+    font-size: 24px; /* Tamanho da fonte do ícone */
+    line-height: 1; /* Altura da linha do texto */
+    margin: 0 10px; /* Adiciona margem para separar os ícones */
+    cursor: pointer;
+}
+
+  
+
+.menu-options {
+    display: none; /* Esconder a lista por padrão */
+    position: absolute; /* Posicionamento absoluto para ajustar a posição */
+    top: 100%; /* Posicionar abaixo do botão */
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  
+    /* Estilos para a lista */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu {
+    display: flex; /* Torna a navegação um container flex */
+    align-items: center; /* Centraliza os itens verticalmente */
+  }
+
+body {
+    background: linear-gradient(135deg, #f9f9f9 30%, #ececec);
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+main {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    padding: 40px;
+    margin: 80px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #D64541;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: #D64541;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #555;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+img {
+    width: 30%;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 15px #f08d89;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+video {
+    width: 22.5%;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+
+video:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+a {
+    color: #D64541;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    border-bottom: 2px solid #D64541;
+    color: #333;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, #D64541 50%, #f8b4b4);
+    color: white;
+    padding: 100px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 24px;
+    color: #fff;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
